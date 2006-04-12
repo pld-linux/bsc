@@ -12,6 +12,7 @@ Source0:	http://www.beesoft.org/download/%{name}_%{version}_src.tar.gz
 # Source0-md5:	19f9bd6d3026bc9a2efa3c99efdcddf2
 #Source1:	%{name}.desktop
 URL:		http://www.beesoft.org/bsc.html
+BuildRequires:	qmake
 BuildRequires:	qt-devel
 #Requires:	-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
