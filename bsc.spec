@@ -1,6 +1,7 @@
 #
+# TODO: optflags
 # look this: http://dag.wieers.com/packages/bsc/bsc.spec
-
+#
 Summary:	Beesoft Commander - NC clone
 Summary(pl):	Beesoft Commander - klon NC
 Name:		bsc
@@ -14,15 +15,15 @@ Source0:	http://www.beesoft.org/download/%{name}_%{version}_src.tar.gz
 URL:		http://www.beesoft.org/bsc.html
 BuildRequires:	qmake
 BuildRequires:	qt-devel
-#Requires:	-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Beesoft Commander is a QT file manager (like Norton Commander) for
+Beesoft Commander is a Qt file manager (like Norton Commander) for
 Linux.
 
 %description -l pl
-
+Beesoft Commander to oparty na Qt zarz±dca plików (podobny do Norton
+Commandera) dla Linuksa.
 
 %prep
 %setup -q -n %{name}
@@ -30,18 +31,13 @@ Linux.
 %build
 export QTDIR=%{_prefix}
 qmake bsc.pro
-%{__make} %{?_smp_mflags}
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/applications/}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir}}
 install bsc $RPM_BUILD_ROOT%{_bindir}
 
-#desktop-file-install --vendor rpmforge             \
-#	--add-category X-Red-Hat-Base              \
-#	--dir $RPM_BUILD_ROOT%{_datadir}/applications \
-#	$SOURCE1
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -49,4 +45,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 #%doc readme.txt
 %attr(755,root,root) %{_bindir}/bsc
-#%{_datadir}/applications/*.desktop
+#%{_desktopdir}/*.desktop
