@@ -1,7 +1,3 @@
-#
-# TODO: optflags
-# look this: http://dag.wieers.com/packages/bsc/bsc.spec
-#
 Summary:	Beesoft Commander - NC clone
 Summary(pl):	Beesoft Commander - klon NC
 Name:		bsc
