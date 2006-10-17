@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=bsc
+Type=Application
+Comment=File manager
+Comment[pl]=Menedżer plików
+Exec=bsc
+Categories=Utility;FileManager;
+Encoding=UTF-8
