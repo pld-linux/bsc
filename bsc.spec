@@ -1,5 +1,5 @@
 Summary:	Beesoft Commander - NC clone
-Summary(pl):	Beesoft Commander - klon NC
+Summary(pl.UTF-8):   Beesoft Commander - klon NC
 Name:		bsc
 Version:	2.27
 Release:	0.1
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Beesoft Commander is a Qt file manager (like Norton Commander) for
 Linux.
 
-%description -l pl
-Beesoft Commander to oparty na Qt zarz±dca plików (podobny do Norton
+%description -l pl.UTF-8
+Beesoft Commander to oparty na Qt zarzÄ…dca plikÃ³w (podobny do Norton
 Commandera) dla Linuksa.
 
 %prep
