@@ -1,5 +1,5 @@
 Summary:	Beesoft Commander - NC clone
-Summary(pl.UTF-8):   Beesoft Commander - klon NC
+Summary(pl.UTF-8):	Beesoft Commander - klon NC
 Name:		bsc
 Version:	2.27
 Release:	0.1
