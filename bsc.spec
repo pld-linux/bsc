@@ -8,7 +8,7 @@ Group:		Applications
 Source0:	http://www.beesoft.org/download/%{name}_%{version}_src.tar.gz
 # Source0-md5:	9b67bc673bccae149ff8350a876b7720
 Source1:	%{name}.desktop
-Patch0:		%{name}-optflags.patch
+#Patch0:		%{name}-optflags.patch
 URL:		http://www.beesoft.org/bsc.html
 BuildRequires:	qmake
 BuildRequires:	qt-devel
